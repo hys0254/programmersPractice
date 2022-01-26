@@ -7,3 +7,4 @@ public class Solution {
         return answer;
     }
 }
+//1이랑 비트연산하면 판별가능

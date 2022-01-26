@@ -1,6 +1,9 @@
 package PP_LV1.PP_strangeWord;
 
 public class Solution {
+
+
+
     // public String solution(String s) {
     //     String answer = "";
     //     String wordArr[]=s.split(" ");
@@ -27,6 +30,7 @@ public class Solution {
     //     }
     //     return answer;
     // }
+
     public String solution(String s) {
         String answer = "";
         int cnt =0;
@@ -46,5 +50,24 @@ public class Solution {
         }
         return answer;
     }
+
+    // string solution(string s) {
+    //     string answer = "";
+        
+    //     int nCount = 1;
+        
+    //     for(int i = 0; i < s.size(); i++, nCount++){
+            
+    //         if(s[i] == ' '){
+    //             answer += ' ';
+    //             nCount = 0;
+    //         }
+            
+    //         else
+    //             nCount & 1 ? answer += toupper(s[i]) : answer += tolower(s[i]); 
+    //     }
+        
+    //     return answer;
+    // }
 
 }
