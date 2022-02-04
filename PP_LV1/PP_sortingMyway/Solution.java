@@ -6,11 +6,10 @@ public class Solution {
         String[] answer = {};
         ArrayList<String> strArr = new ArrayList<>(Arrays.asList(strings));
         Collections.sort(strArr, new StringComparator(n));
-        answer=strArr.toArray();
+        answer=strArr.toArray(new String[strArr.size()]);
         return answer;
     }
 }
-
 class StringComparator implements Comparator<String>{
     int pos;
     public StringComparator(int n) {
@@ -18,7 +17,7 @@ class StringComparator implements Comparator<String>{
     }
     @Override
     public int compare(String o1, String o2) {
-        if(o1.charAt(pos)>o2.charAt(pos)){
+         if(o1.charAt(pos)>o2.charAt(pos)){
             return 1;
         }else if(o1.charAt(pos)<o2.charAt(pos)){
             return -1;
